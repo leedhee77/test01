@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>스포츠 예상</title>
+	<link rel="stylesheet" type="text/css" href="layout.css">
+	<link rel="stylesheet" type="text/css" href="marquee.css">
+	<link rel="stylesheet" type="text/css" href="chat.css">
+	<link rel="stylesheet" type="text/css" href="twinkle.js">
+	<link rel="stylesheet" type="text/css" href="log.css">
+	<link rel="stylesheet" type="text/css" href="center.css">
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" type="text/css" href="select.css">
+	<link rel="stylesheet" type="text/css" href="api.js">
+
+</head>
+<body>
+	<div class="header">
+	  
+		  <img class="logo" src="media/picture/clover.jpg" href="sportsproposal.html" alt="스포츠예상">
+	  	
+	   
+	  <h4 class="title"><a href="sp.html">스 포 츠&nbsp예 상</a><h4>
+	   
+	   <form class="login">
+	    	<label class="id">아 이 디<input type="text" size="10" placeholder="user id"></label>
+	  	    <label class="pass">패스워드<input type="pass" size="10" placeholder="****"></label>
+	  
+	  	    <ul>
+       			<span><a href="member.html" title="회원가입">회원가입</a></span>
+       			<span><a href="find.html">아이디 찾기</a></span>
+       			<span><a href="find.html">패스워드 찾기</a></span>
+       			<span><a href="consermer.html">고객센터</a></span>
+       		</ul>
+  		</form>    
+
+	  
+	   <input type="submit" title="로그인" alt="로그인" tabindex="12" value="로그인" class="loginbutton" onclick="nclks('log.login',this,event)">
+	   <a href="login.html"><input class="loginbutton" type="button" value="로그인" ></a>
+      
+    </div>
+	  
+
+	  <center>
+	        <input class="search" type="text" size="50" name="search" placeholder="검색어 입력....." >
+	        <button class="search2" type="button" name="search" value="검색" >검색</button>
+	  </center>
+	 
+
+	 <center>    
+	 <div class="marquee">
+	 <marquee direction="left"><span>경기 진행 상황</span></marquee>
+	 </div>
+	 </center>
+     
+     <center>
+      
+      <ul class="sort">
+      	<li class="event"><a href="#" title="축구">축구</a></li>
+      	<li class="event"><a href="#" title="야구">야구</a></li>
+      	<li class="event"><a href="#">농구</a></li>
+      	<li class="event"><a href="#">배구</a></li>
+      	<li class="event"><a href="#">테니스</a></li>
+      </ul>
+      
+      </center>
+	 
+	   
+	
+
+
+
+
+	<div class="games">
+		<marquee direction="left">게임 목록</marquee>	
+	</div>
+	
+
+
+
+    <div class="center">
+	<div class="live">
+	     <marquee direction="left">라이브 생방송</marquee>	
+	</div>
+	<div class="result" onload="API()">
+		<marquee direction="left">검색 결과</marquee>
+	</div>
+	</div>
+    
+
+    <div class="chat">
+	<form class="group">
+		<fieldset>
+			<label >단 체 채 팅</label>
+		</fieldset>
+	</form>
+	<form class="private">
+		<fieldset>
+			<label>개 별 채 팅</label>
+		</fieldset>
+	</form>
+	</div>
+
+
+	
+
+
+</body>
+</html>
